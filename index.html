@@ -28,20 +28,45 @@
 				<nav class="nav">
 					<div class="container">
 						<div class="nav__body">
-							<a href="#" class="logo">
+							<a href="/" class="nav__logo logo">
 								<img src="img/scandi-logo.png" title="scandi" alt="scandi">
 							</a>
 
-							<ul class="menu">
-								<li><a href="#" class="menu__link">О компании</a></li>
-								<li><a href="#" class="menu__link">Портфолио</a></li>
-								<li><a href="#" class="menu__link">Команда</a></li>
-								<li><a href="#" class="menu__link">Как мы работаем</a></li>
-								<li><a href="#" class="menu__link">Отзывы клиентов</a></li>
-								<li><a href="#" class="menu__link">Оставить заявку</a></li>
+							<ul class="nav__menu menu">
+								<li><a href="#about" class="menu__link">О компании</a></li>
+								<li><a href="#portfolio" class="menu__link">Портфолио</a></li>
+								<li><a href="#team" class="menu__link">Команда</a></li>
+								<li><a href="#working" class="menu__link">Как мы работаем</a></li>
+								<li><a href="#reviews" class="menu__link">Отзывы клиентов</a></li>
+								<li><a href="#contact" class="menu__link">Оставить заявку</a></li>
 							</ul>
 
-							<a href="tel:+79818574624" class="nav__phone">+7 (981) 857-46-24</a>
+							<div class="nav__burger burger" id="elem-burger">
+								<div class="burger__btn">
+									<span class="burger__line"></span>
+									<span class="burger__line"></span>
+									<span class="burger__line"></span>
+								</div>
+								<div class="burger__bg"></div>
+
+								<div class="burger__menu">
+									<div class="burger__nav">
+										<div class="burger__close-btn"></div>
+									</div>
+
+									<ul class="burger__list">
+										<li><a href="#about" class="burger__link">О компании</a></li>
+										<li><a href="#portfolio" class="burger__link">Портфолио</a></li>
+										<li><a href="#team" class="burger__link">Команда</a></li>
+										<li><a href="#working" class="burger__link">Как мы работаем</a></li>
+										<li><a href="#reviews" class="burger__link">Отзывы клиентов</a></li>
+										<li><a href="#contact" class="burger__link">Оставить заявку</a></li>
+										<li><a href="tel:+79818574624" class="burger__phone phone">+7 (981) 857-46-24</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<a href="tel:+79818574624" class="nav__phone phone">+7 (981) 857-46-24</a>
 						</div>
 					</div>
 				</nav>
@@ -50,7 +75,7 @@
 					<div class="header__content">
 						<h1 class="header__title">Поможем сделать вашу квартиру уютнее</h1>
 						<p class="header__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
-						<a href="#" class="btn header__btn">Оставить заявку</a>
+						<a href="#contact" class="btn header__btn">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -58,7 +83,7 @@
 
 		<!-- About -->
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container container_sm">
 				<div class="title">
 					<h2 class="title__title">О нас</h2>
@@ -106,7 +131,7 @@
 
 		<!-- Portfolio -->
 
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<div class="container">
 				<div class="title title_l">
 					<h2 class="title__title">Наши работы</h2>
@@ -167,7 +192,7 @@
 
 		<!-- Team -->
 
-		<section class="team">
+		<section class="team" id="team">
 			<div class="container container_sm">
 				<div class="title">
 					<h2 class="title__title">Команда</h2>
@@ -209,7 +234,7 @@
 
 		<!-- Working -->
 
-		<section class="working">
+		<section class="working" id="working">
 			<div class="container">
 				<div class="title">
 					<h2 class="title__title">Как мы работаем</h2>
@@ -247,15 +272,21 @@
 			</div>
 		</section>
 
-		<!-- About -->
+		<!-- Reviews -->
 
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container container_sm">
 				<div class="title">
 					<h2 class="title__title">Отзывы</h2>
 				</div>
 
 				<div class="reviews__slider swiper-container">
+					<div class="swiper-button-prev reviews__slider-prev reviews__slider-btn">
+						<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#F5F2ED"/>
+						</svg>
+					</div>
+
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="reviews__slider-text">
@@ -268,13 +299,51 @@
 							</div>
 
 							<div class="reviews__slider-images">
-								<img src="" alt="">
+								<img src="img/reviews/1.jpg" title="reviews-img" alt="reviews-img">
+								<img src="img/reviews/2.jpg" title="reviews-img" alt="reviews-img">
 							</div>
 						</div>
 					</div>
 
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+					<div class="swiper-button-next reviews__slider-next reviews__slider-btn">
+						<svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z" fill="#F5F2ED"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+
+		<section class="contact" id="contact">
+			<div class="container container_sm">
+				<div class="contact__body">
+					<div class="contact__contact">
+						<h2 class="contact__title">Оставить заявку</h2>
+						<p class="contact__text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+						<form action="#" class="contact__form" id="contact-form">
+							<input type="text" class="contact__form-input _req" placeholder="Ваше имя">
+							<input type="tel" class="contact__form-input _req _phone" placeholder="Введите телефон">
+							<button type="submit" class="contact__form-btn btn">Оставить заявку</button>
+						</form>
+					</div>
+
+					<div class="contact__map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6194872569633!2d30.321109615770435!3d59.938455981876146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1618670971276!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+
+		<section class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<a href="tel:+79818574624" class="footer__phone phone">+7 (981) 857-46-24</a>
+					<address class="footer__address">г. Санкт-петербург, ул. Большая Конюшенная, 19</address>
+					<p class="footer__name">ИП Королёва А.А.</p>
 				</div>
 			</div>
 		</section>
@@ -284,168 +353,3 @@
 	<script src="js/script.js"></script>
 </body>
 </html>
-
-<!-- Container -->
-
-<!-- <section class="section">
-	<div class="section__content">
-		<div class="container">
-			<div class="section__body">
-				
-			</div>
-		</div>
-	</div>
-
-	<div class="section__image">
-		<img src="img/" alt="" title="">
-	</div>
-</section> -->
-
-<!-- Burger -->
-
-<!-- <div class="burger" id="elem-burger">
-	<div class="burger__btn">
-		<span class="burger__line"></span>
-		<span class="burger__line"></span>
-		<span class="burger__line"></span>
-	</div>
-	<div class="burger__bg"></div>
-
-	<div class="burger__menu">
-		<div class="burger__nav">
-			<div class="burger__close-btn"></div>
-		</div>
-
-		<ul class="burger__list">
-			<li><a href="#" title="Home" class="burger__link">Home</a></li>
-			<li><span class="burger__link" data-to="">Home</span></li>
-		</ul>
-	</div>
-</div> -->
-
-<!-- Open Menu -->
-
-<!-- <ul class="menu">
-	<li>
-		<span class="menu__link">Resources</span>
-		<span class="menu__arrow">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="menu__icon" fill="#fff" width="22px" height="22px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-		</span>
-		<div class="menu__sub-wrap">
-			<ul class="menu__sub-menu">
-				<li><span title="Price" class="menu__sub-link">Price</span></li>
-				<li><span title="Partners" class="menu__sub-link">Partners</span></li>
-			</ul>
-		</div>
-	</li>
-</ul> -->
-
-<!-- Select -->
-
-<!-- <div class="select elem-select" id="elem-select"> data-select-disable="true" data-select-size="2" data-select-autofocus="true" data-select-required="true"
-	<div class="select__title elem-select__title">
-		<p class="select__text elem-select__text">Text: </p>
-		<p class="select__value elem-select__value">Value</p>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="select__icon elem-select__icon" fill="#fff" width="22px" height="22px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-	</div>
-
-	<div class="select__list elem-select__list">
-		<input type="checkbox" class="select__input" id="elem-1">
-		<label for="elem-1" class="select__label elem-select__label">Value 1</label>
-		<input type="checkbox" class="select__input" id="elem-2">
-		<label for="elem-2" class="select__label elem-select__label">Value 2</label>
-		<input type="checkbox" class="select__input" id="elem-3">
-		<label for="elem-3" class="select__label elem-select__label">Value 3</label>
-	</div>
-</div> -->
-
-<!-- Drop Tab -->
-
-<!-- <div class="drop-tab" id="elem-range">
-	<div class="drop-tab__nav elem__nav">
-		<p class="drop-tab__value elem__value">Text</p>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="drop-tab__icon elem__icon" fill="#000" width="32px" height="32px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-	</div>
-
-	<div class="drop-tab__content elem__content">
-
-	</div>
-</div> -->
-
-<!-- Popup -->
-
-<!-- <p class="popup-btn" data-to-popup="elem-popup">Text</p>
-
-<div id="elem-popup" class="elem-popup popup">
-	<div class="elem-popup__body popup__body">
-		<div class="elem-popup__close popup__close">
-			<p>Close</p>
-		</div>
-		<input type="text" class="elem-popup__input" placeholder="Name">
-		<input type="password" class="elem-popup__input" placeholder="Password">
-		<button type="submit" class="elem-popup__input">Join</button>
-	</div>
-</div> -->
-
-<!-- Form -->
-
-<!-- <form action="#" id="form" class="form__body">
-	<h1 class="form__title">Отправка данных на почту</h1>
-	<div class="form__item">
-		<label for="formName" class="form__label">Имя*:</label>
-		<input type="text" id="formName" class="form__input _req" name="name">
-	</div>
-
-	<div class="form__item">
-		<label for="formEmail" class="form__label">E-mail*:</label>
-		<input type="text" id="formEmail" class="form__input _req _email" name="email">
-	</div>
-
-	<div class="form__item">
-		<div class="form__label">Левша или правша?</div>
-		<div class="options">
-			<div class="options__item">
-				<input id="formRightHanded" checked type="radio" value="Right" name="hand" class="options__input">
-				<label for="formRightHanded" class="options__label">Правша</label>
-			</div>
-			<div class="options__item">
-				<input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
-				<label for="formLeftHanded" class="options__label">Левша</label>
-			</div>
-		</div>
-	</div>
-
-	<div class="form__item">
-		<label for="formMessage" class="form__label">Сообщение:</label>
-		<textarea name="message" id="formMessage" class="form __input"></textarea>
-	</div>
-
-	<div class="form__item">
-		<div class="form__label">Возраст:</div>
-		<select name="age" class="select">
-			<option value="от 18 до 25" selected>Молодой</option>
-			<option value="от 25 до 45">Старый</option>
-			<option value="от 45">Супер стар</option>
-		</select>
-	</div>
-
-	<div class="form__item">
-		<div class="form__label">Прикрепить фото</div>
-		<div class="file">
-			<div class="file__item">
-				<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
-				<div class="file__button">Выбрать</div>
-			</div>
-			<div id="formPreview" class="file__preview"></div>
-		</div>
-	</div>
-
-	<div class="form__item">
-		<div class="checkbox">
-			<input id="formAgreement" checked type="checkbox" name="agreement" class="_req checkbox__input">
-			<label for="formAgreement" class="checkbox__label">Я согласен</label>
-		</div>
-	</div>
-
-	<button class="form__button" type="submit">Отправить</button>
-</form> -->
