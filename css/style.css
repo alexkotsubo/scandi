@@ -631,6 +631,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact__form-input::placeholder {
 	color: #F6EDE9;
+	opacity: 1;
 }
 
 .contact__form-input._error {
